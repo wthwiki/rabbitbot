@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/rabbitbot
+    username: root
+    password: admin
+
+    #jpa配置  更新或自动生成表  控制台打印sql
+  mvc:
+    static-path-pattern: /**
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
